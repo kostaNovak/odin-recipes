@@ -1,0 +1,48 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+a {
+    color: rgb(9, 7, 2);
+    font-size: 20px;
+}
+li {
+    padding: 1em;
+}
+h1 {
+    font-weight: 600;
+}
+
+body {
+    background-color: rgb(255, 196, 87);
+}
+
+.container {
+    text-align: center;
+}
+
+.underline{
+    position: relative;
+  }
+
+.underline::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0074D9;
+    color: white;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+@media (hover: hover) and (pointer: fine) {
+    .underline:hover::before{
+      left: 0;
+      right: auto;
+      width: 100%;
+      color: white;
+    }
+  }
