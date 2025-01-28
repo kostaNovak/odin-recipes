@@ -1,3 +1,3 @@
 # odin-recipes
 
-ok evo promenio sam
+ok evo promenio sam.
